@@ -1,4 +1,4 @@
-###Waifu Errors
+### Waifu Errors
 Your code has errors. She has opinions.
 Waifu Errors is a VS Code extension that reacts to editor errors with random anime character images, playful scolding messages, and prerecorded voice clips in a sidebar. Audio plays from local MP3 files—no API keys or speech-service credits required.
 #Features
@@ -8,12 +8,12 @@ Waifu Errors is a VS Code extension that reacts to editor errors with random ani
 - Displays the actual diagnostic message beneath the character's reaction.
 - Works with errors reported by VS Code's installed language services.
 - An Enable audio button appears when playback requires a click.
-#Requirements
+# Requirements
 - A VS Code version compatible with engines.vscode in package.json.
 - Node.js and npm to build the extension from source.
 - A language service that reports errors, such as Python with Pylance.
 - The images and audio files referenced in src/extension.ts.
-#Run locally
+# Run locally
 1. Download or clone this repository and open its folder in VS Code.
 2. Install the project dependencies:
    npm install
@@ -29,7 +29,7 @@ How it works
 The extension listens for changes to VS Code diagnostics and filters for Error severity. When a file's error details change while the sidebar is visible, it selects an image and a prerecorded scolding, then sends them to the sidebar webview.
 The webview updates the image and caption, stops any previous audio, and attempts to play the new clip. If autoplay is blocked, it offers an Enable audio button.
 The recordings contain fixed phrases. The actual diagnostic is displayed as text; it is not synthesized into speech.
-Language support
+# Language support
 The diagnostic listener is language-independent. It can react to Python, JavaScript, TypeScript, Java, C, C++, and other languages when an installed language service reports errors.
 This extension does not provide its own compiler or language analyzer. Language activation is configured in package.json, and error detection depends on the relevant language service. Runtime exceptions printed only in the terminal do not trigger reactions.
 Customize the character
@@ -46,7 +46,7 @@ Images are selected independently of audio. Each audio file is paired with its c
   text: 'Another error? Take a breath and try again.'
 }
 Use images and recordings you have permission to redistribute, and include any required attribution.
-#Current limitations
+# Current limitations
 - The sidebar must be visible for reactions to trigger.
 - Opening the sidebar does not automatically replay existing errors; a diagnostic change is needed.
 - Audio may require a user click, particularly after the webview is recreated.
@@ -54,7 +54,7 @@ Use images and recordings you have permission to redistribute, and include any r
 - Rapid diagnostic updates can repeatedly interrupt clips.
 - Only Error severity triggers reactions; warnings are ignored.
 - Settings such as cooldowns and voice selection are not currently exposed in VS Code settings.
-#Troubleshooting
+# Troubleshooting
 No reaction: Keep the sidebar visible, confirm errors appear in the Problems panel, then clear and reintroduce an error.
 No sound: Click Enable audio if shown. Check the MP3 filenames and the media/audio/ folder. Playback failures are displayed in the sidebar.
 Missing image: Check that every filename in the images array exists in media/, including bob.png if listed.
