@@ -1,19 +1,19 @@
-Waifu Errors
+###Waifu Errors
 Your code has errors. She has opinions.
 Waifu Errors is a VS Code extension that reacts to editor errors with random anime character images, playful scolding messages, and prerecorded voice clips in a sidebar. Audio plays from local MP3 files—no API keys or speech-service credits required.
-Features
+#Features
 - Random character images and scolding lines when editor error diagnostics change.
 - Local MP3 playback with captions matched to each recording.
 - Interrupts the current voice clip when a new scolding arrives.
 - Displays the actual diagnostic message beneath the character's reaction.
 - Works with errors reported by VS Code's installed language services.
 - An Enable audio button appears when playback requires a click.
-Requirements
+#Requirements
 - A VS Code version compatible with engines.vscode in package.json.
 - Node.js and npm to build the extension from source.
 - A language service that reports errors, such as Python with Pylance.
 - The images and audio files referenced in src/extension.ts.
-Run locally
+#Run locally
 1. Download or clone this repository and open its folder in VS Code.
 2. Install the project dependencies:
    npm install
@@ -46,7 +46,7 @@ Images are selected independently of audio. Each audio file is paired with its c
   text: 'Another error? Take a breath and try again.'
 }
 Use images and recordings you have permission to redistribute, and include any required attribution.
-Current limitations
+#Current limitations
 - The sidebar must be visible for reactions to trigger.
 - Opening the sidebar does not automatically replay existing errors; a diagnostic change is needed.
 - Audio may require a user click, particularly after the webview is recreated.
@@ -54,7 +54,7 @@ Current limitations
 - Rapid diagnostic updates can repeatedly interrupt clips.
 - Only Error severity triggers reactions; warnings are ignored.
 - Settings such as cooldowns and voice selection are not currently exposed in VS Code settings.
-Troubleshooting
+#Troubleshooting
 No reaction: Keep the sidebar visible, confirm errors appear in the Problems panel, then clear and reintroduce an error.
 No sound: Click Enable audio if shown. Check the MP3 filenames and the media/audio/ folder. Playback failures are displayed in the sidebar.
 Missing image: Check that every filename in the images array exists in media/, including bob.png if listed.
