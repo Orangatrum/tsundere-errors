@@ -299,7 +299,7 @@ export class WaifuViewProvider implements vscode.WebviewViewProvider {
         },
         {
           file: '3.mp3',
-          text: "I-I believed in you… Then I saw this mess. Don’t look so happy about it!"
+          text: "Hmph… look at this error. D-Don’t think I’m disappointed or anything… I just expected a little more competence, baka."
         },
         {
           file: '4.mp3',
