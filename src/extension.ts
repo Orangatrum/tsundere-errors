@@ -272,7 +272,8 @@ export class WaifuViewProvider implements vscode.WebviewViewProvider {
         '3.png',
         '4.png',
         '5.png',
-        'bob.png'
+        '6.png',
+        '7.png'
       ];
 
       const randomImage =
@@ -311,6 +312,10 @@ export class WaifuViewProvider implements vscode.WebviewViewProvider {
         {
           file: '6.mp3',
           text: "I-I’m not fixing this for you! …Okay, maybe I’ll give you one tiny hint. Don’t get the wrong idea!"
+        },
+        {
+          file: '7.mp3',
+          text:"Seriously… another mistake? I-It’s not like I expected better from you or anything… just fix it already, dummy."
         }
       ];
 
