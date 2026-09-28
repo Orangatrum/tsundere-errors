@@ -8,6 +8,10 @@ Waifu Errors is a VS Code extension that reacts to editor errors with random ani
 - Displays the actual diagnostic message beneath the character's reaction.
 - Works with errors reported by VS Code's installed language services.
 - An Enable audio button appears when playback requires a click.
+
+https://github.com/user-attachments/assets/865c528d-4258-44ec-931e-9c59fb987d90
+
+
 ## Requirements
 - A VS Code version compatible with engines.vscode in package.json.
 - Node.js and npm to build the extension from source.
