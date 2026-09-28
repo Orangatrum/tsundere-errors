@@ -3,6 +3,7 @@ Your code has errors. She has opinions.
 Waifu Errors is a VS Code extension that reacts to editor errors with random anime character images, playful scolding messages, and prerecorded voice clips in a sidebar. Audio plays from local MP3 files—no API keys or speech-service credits required.
 ## Features
 - Random character images and scolding lines when editor error diagnostics change.
+- 7 different Tsundere waifus with 7 different audios!
 - Local MP3 playback with captions matched to each recording.
 - Interrupts the current voice clip when a new scolding arrives.
 - Displays the actual diagnostic message beneath the character's reaction.
